@@ -47,7 +47,9 @@ const RecommendedSection = () => {
       <div className="mt-8">
         <Slider {...settings} appendDots={appendDots} className="mt-12">
           {carouselItems.map((item) => (
-            <Cards key={item.id} item={item} />
+            <div key={item.id} className="px-2">
+              <Cards item={item} />
+            </div>
           ))}
         </Slider>
       </div>
